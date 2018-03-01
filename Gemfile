@@ -28,6 +28,12 @@ gem 'jbuilder', '~> 2.5'
 # Bootstrap and its dependencies
 gem 'bootstrap', '~> 4.0.0'
 gem 'jquery-rails'
+
+
+#Paperclip and depends
+gem 'paperclip'
+gem 'aws-sdk', '~> 2.3'
+gem 'dotenv-rails', :group => :development
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password

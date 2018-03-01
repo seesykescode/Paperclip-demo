@@ -10,6 +10,7 @@
   <div class="row">
     <% @photos.each do |p| %>
    <div class="card col-lg-3" style="width: 20rem; margin: 20px">
+    <%= image_tag p.photo.url(:medium) %>
     <div class="card-body">
         <h1 class="card-title"><%= p.title %></h1>
         <p class="card-text"><%= p.description %></p>
