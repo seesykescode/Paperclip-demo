@@ -9,8 +9,8 @@
     </div>
   <div class="row">
     <% @photos.each do |p| %>
-   <div class="card col-lg-3" style="width: 20rem; margin: 20px">
-    <%= image_tag p.photo.url(:medium) %>
+   <div class="card col-lg-3 text-center" style="width: 20rem; margin: 20px">
+    <%= link_to image_tag(p.photo.url(:medium), style: "margin: 20px 0px;", class: "card-img-top"), photo_path(p.id) %>
     <div class="card-body">
         <h1 class="card-title"><%= p.title %></h1>
         <p class="card-text"><%= p.description %></p>
