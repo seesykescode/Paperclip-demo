@@ -1,0 +1,16 @@
+<div class="container">
+<%= form_for @photo do |f|%>
+ <div class="form-group">
+    <label for="title"> Photo Title</label>
+    <%= f.text_field(:title, {placeholder: "Title of photo", id: "title", class: "form-control"}) %>
+  </div>
+  <div class="form-group">
+    <label for="description">Photo description</label>
+    <%= f.text_field(:description, {placeholder: "Description of photo", id: "description", class: "form-control"}) %>
+  </div>
+
+  <div class="form-group">
+    <%= f.submit "Save Photo", :class => "btn btn-primary" %>
+  </div>
+<% end %>
+</div>

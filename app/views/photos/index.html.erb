@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="jumbotron">
+       <div class="text-center">
+         <h1 class="display-4">Photo Demo App</h1>
+        <p class="lead">Cuz you know I had to do it to em</p>
+        <%= button_to('Add a new photo', photos_new_path, :method => :get, :class => 'btn btn-large btn-primary center-block')  %>
+       </div>
+
+    </div>
+  <div class="row">
+    <% @photos.each do |p| %>
+   <div class="card col-lg-3" style="width: 20rem; margin: 20px">
+    <div class="card-body">
+        <h1 class="card-title"><%= p.title %></h1>
+        <p class="card-text"><%= p.description %></p>
+    </div>
+   </div>
+ <% end %>
+  </div>
+</div>
